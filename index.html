@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        #number-balls{display:none;}
+        #results{display:none;}
+    </style>
+
+    <title>HW5 - Lottery Simulation</title>
+</head>
+
+<body>
+    <div id="head">
+        <h1>$$ Welcome to Lucky For Life Simulation $$</h1>
+    </div>
+
+    <div id="number-balls">
+        <div class="sec">
+            <h3>Your Numbers:</h3>
+            <div class="block">
+                <ul id="display-user-nums"></ul>
+            </div> <!-- End block -->
+        </div> <!-- End sec -->
+        
+        <div class="sec">
+            <h3>The Winning Numbers:</h3>
+            <div class="block">
+                <ul id="display-winning-nums"></ul>
+            </div> <!-- End block -->
+        </div> <!-- End sec -->
+    </div> <!-- End number-balls -->
+
+    <div id="results">
+        <div class="sec">
+            <h3>Let's See How You Did...</h3>
+            <!-- Display how many matched with LuckNums -->
+            <div class="block">
+                <p id="general-matching"></p>
+            </div> <!-- End block -->
+
+            <!-- Display if Lucky Ball matched -->
+            <div class="block">
+                <p id="lucky-match"></p>
+            </div> <!-- End block -->
+
+            <!-- What the payout would be for your pick -->
+            <div class="block">
+                <p id="display-payout"></p>
+            </div> <!-- End block -->
+        </div> <!-- End sec -->
+    </div> 
+
+    <div id="prompter">
+        <div class="block">
+            <p>Feeling Lucky? Enter Your Numbers!</p>
+            <input type="button" value="Let's Go!" id="btn" onclick="main()">
+        </div>
+    </div> <!-- End prompter -->
+
+    <footer>
+        <p>Copyright &copy; 2021 Not the Mass Lottery</p>
+    </footer>
+
+    <script language="javascript" src="main.js"></script>
+</body>
+</html>
